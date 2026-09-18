@@ -18,6 +18,7 @@ from .exposure import (
     validate_country_result,
 )
 from .s3 import DEFAULT_BUCKET, upload_file_to_s3
+from .sensitivity import sample_with_buffer_sensitivity
 
 
 def run_country_pipeline(
@@ -28,6 +29,7 @@ def run_country_pipeline(
     upload_s3: bool = False,
     s3_bucket: str = DEFAULT_BUCKET,
     out_dir: Path | str = "results/tables",
+    run_sensitivity: bool = False,
 ) -> pd.DataFrame:
     """Run exposure analysis for one country using local data files and optionally push to S3."""
     iso3 = iso3.strip().upper()
@@ -70,6 +72,15 @@ def run_country_pipeline(
         tile_covered_count = int(tile_covered.sum())
         valid_pixel_count = int(valid_pixel.sum())
         exposed_count = int(exposed_arr.sum())
+
+        sensitivity_report = None
+        if run_sensitivity and len(valid_df) > 0:
+            sensitivity_report = sample_with_buffer_sensitivity(
+                sources,
+                valid_df["lon"].to_numpy(),
+                valid_df["lat"].to_numpy(),
+                buffer_meters=(0.0, 15.0, 30.0),
+            )
     finally:
         for s in sources:
             s.close()
@@ -109,6 +120,13 @@ def run_country_pipeline(
 
     csv_out = out_dir / f"{iso3}_GABAM{year}.csv"
     df_result.to_csv(csv_out, index=False)
+
+    if sensitivity_report:
+        sens_out = out_dir / f"{iso3}_GABAM{year}_sensitivity.json"
+        sens_out.write_text(json.dumps(sensitivity_report, indent=2), encoding="utf-8")
+        if upload_s3:
+            s3_sens_key = f"results/sensitivity/{iso3}_GABAM{year}_sensitivity.json"
+            upload_file_to_s3(sens_out, s3_sens_key, bucket=s3_bucket)
 
     if upload_s3:
         s3_key = f"results/country_results/{iso3}_GABAM{year}.csv"

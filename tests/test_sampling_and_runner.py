@@ -107,3 +107,30 @@ def test_runner_s3_upload(tmp_path):
         )
         assert len(res) == 1
         assert mock_upload.called
+
+def test_runner_sensitivity_s3_upload(tmp_path):
+    raster_path = tmp_path / "N50E005.tif"
+    transform = from_origin(5.0, 50.0, 0.05, 0.05)
+    data = np.zeros((100, 100), dtype=np.uint8)
+    with rasterio.open(
+        raster_path, "w", driver="GTiff", height=100, width=100, count=1,
+        dtype=np.uint8, crs="EPSG:4326", transform=transform, nodata=0,
+    ) as dst:
+        dst.write(data, 1)
+
+    csv_path = tmp_path / "buildings.csv"
+    pd.DataFrame({"lon": [6.0], "lat": [48.0]}).to_csv(csv_path, index=False)
+
+    out_dir = tmp_path / "out"
+    with patch("wildfire_exposure.runner.upload_file_to_s3") as mock_upload:
+        res = run_country_pipeline(
+            iso3="TEST",
+            obat_csv_path=csv_path,
+            tile_paths=[raster_path],
+            year=2024,
+            upload_s3=True,
+            out_dir=out_dir,
+            run_sensitivity=True,
+        )
+        assert len(res) == 1
+        assert mock_upload.call_count == 2

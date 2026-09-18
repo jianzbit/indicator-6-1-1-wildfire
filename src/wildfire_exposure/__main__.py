@@ -1,7 +1,7 @@
 """Main CLI entrypoint."""
 
 import sys
-from .runner import run_country_pipeline
+from .cli import main
 
 if __name__ == "__main__":
-    print("Wildfire exposure CLI")
+    main()

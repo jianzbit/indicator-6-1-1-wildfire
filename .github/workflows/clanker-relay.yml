@@ -1,0 +1,37 @@
+name: Clanker relay
+
+# Trusted context only: workflow_run jobs execute the default-branch version of
+# this file and never run inside a pull-request workflow. The dispatch token is
+# therefore never exposed to pull-request workflows.
+on:
+  workflow_run:
+    workflows: ["Clanker finish line"]
+    types: [completed]
+
+permissions: {}
+
+concurrency:
+  group: clanker-relay
+  cancel-in-progress: false
+
+jobs:
+  ping:
+    if: github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+
+      - name: Ping race telemetry
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.RACE_DISPATCH_TOKEN }}
+          HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
+        run: |
+          INDICATOR_ID="$(node -p "require('./.clanker/state.json').indicatorId" 2>/dev/null || echo unknown)"
+          gh api repos/Building-Insights-Together/clanker-race/dispatches \
+            -f event_type=clanker-lap \
+            -f "client_payload[indicator_id]=${INDICATOR_ID}" \
+            -f "client_payload[repo]=${GITHUB_REPOSITORY}" \
+            -f "client_payload[head_sha]=${HEAD_SHA}"

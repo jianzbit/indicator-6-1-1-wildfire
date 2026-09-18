@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Environment / secrets
+.env
+.env.*
+*.pem
+*.key
+
+# macOS
+.DS_Store
+
+# Raw/local data
+data/*
+!data/README.md
+
+# Generated outputs
+outputs/*
+!outputs/.gitkeep
+
+# Common large geospatial files
+*.tif
+*.tiff
+*.gpkg
+*.nc
+*.hdf
+*.h5
+
+# Temporary files
+*.tmp
+*.log

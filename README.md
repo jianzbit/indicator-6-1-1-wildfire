@@ -31,4 +31,6 @@ Current QA status is qualified: 8 processing attempts were `completed`, 220 were
 The 228 country-level CSV files are preserved under [`results/tables/country_results/`](results/tables/country_results/), with one result row per country or territory. The processing log is preserved under [`results/qa/processing_log_GABAM2024.csv`](results/qa/processing_log_GABAM2024.csv). No invalid-country output files or checkpoint files were present in the source archive. The large GeoPackage, raw datasets, raster caches, and temporary/intermediate outputs are excluded from GitHub. Curated final figures will go under `results/figures/`.
 
 ## Status
-Notebook V4 and the consolidated GABAM 2024 result are organized in this repository. Further QA review and final curation remain pending.
+Notebook V4, its rendered HTML export, the consolidated GABAM 2024 exposure results, 228 country-level result files, and QA/processing provenance are organized in this repository.
+
+The current results remain subject to further QA review, particularly for countries flagged as completed_low_coverage. The large GeoPackage, raw GABAM and GHS-OBAT datasets, raster caches, and temporary/intermediate outputs are intentionally excluded from GitHub.

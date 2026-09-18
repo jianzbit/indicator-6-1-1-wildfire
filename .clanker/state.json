@@ -1,8 +1,15 @@
 {
   "indicatorId": "6.1.1",
-  "currentVersion": "0.1",
-  "completedVersions": [],
-  "coverage": 0,
-  "lines": 0,
-  "lastMergedAt": null
+  "currentVersion": "0.2",
+  "completedVersions": [
+    {
+      "version": "0.1",
+      "pr": 1,
+      "sha": "9aa947c82268da177da2e5c860751a1d8caba8d3",
+      "mergedAt": "2026-09-18T17:06:18Z"
+    }
+  ],
+  "coverage": 96.67999999999999,
+  "lines": 13706,
+  "lastMergedAt": "2026-09-18T17:06:18Z"
 }

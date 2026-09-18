@@ -1,30 +1,23 @@
-# Indicator 6.1.1 – Buildings in areas impacted by wildfire
+# Indicator 6.1.1: Buildings in areas impacted by wildfire
 
 ## Purpose
-Estimate annual building exposure to burned areas.
+Estimate building exposure to wildfire-impacted areas using burned-area observations and building locations.
 
-## Methodology
-Intersect GHS-OBAT building locations with GABAM 30 m burned-area pixels (approximately 1985–2021). A natural-vegetation or land-cover mask may be applied after method review.
+## Method
+Exposure is based on building points falling on burned GABAM pixels. The current analysis is implemented in notebook version V4.
 
-## Input datasets
-- GABAM burned-area dataset
+## Datasets
+- GABAM burned-area data
 - GHS-OBAT building data
-- Optional natural-vegetation or land-cover mask
 
-## Processing workflow
-Prepare and validate burned-area rasters, align building locations and CRS, identify buildings intersecting burned pixels, and calculate annual counts and percentages.
+Raw datasets are not stored in GitHub. See [`data/README.md`](data/README.md) for external data documentation.
 
-## Outputs
-Building-level exposure records and annual country or area-level exposure counts and percentages. Raw and generated data remain outside GitHub.
+## Analysis files
+- Notebook: [`notebooks/wildfire_building_exposure_v4.ipynb`](notebooks/wildfire_building_exposure_v4.ipynb)
+- Rendered HTML: [`notebooks/exports/wildfire_building_exposure_v4.html`](notebooks/exports/wildfire_building_exposure_v4.html)
 
-## QA/QC
-Check CRS, raster validity, temporal coverage, geometry validity, duplicate buildings, country totals, and plausible annual changes.
-
-## Data provenance
-Record source, version, access date, processing parameters, and transformations in project metadata.
-
-## Known limitations
-GABAM coverage and resolution constrain detection; building data and burned-area timing may not align. The vegetation mask and final exposure rules require confirmation.
+## Results
+Curated final tables will go under `results/tables/` and curated final figures under `results/figures/`. Intermediate processing outputs and raw data are excluded from the repository.
 
 ## Status
-Initial repository setup; analysis implementation pending.
+Notebook V4 is organized in this repository. Further curation of final results is pending.

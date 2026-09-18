@@ -15,12 +15,19 @@ venv/
 .DS_Store
 
 # Raw/local data
-data/*
-!data/README.md
+/data/*
+!/data/README.md
 
-# Generated outputs
-outputs/*
-!outputs/.gitkeep
+# Generated results and temporary outputs
+/results/tables/*
+!/results/tables/.gitkeep
+/results/figures/*
+!/results/figures/.gitkeep
+outputs/
+
+# Notebook/runtime caches
+.ipynb_checkpoints/
+.cache/
 
 # Common large geospatial files
 *.tif
@@ -29,6 +36,13 @@ outputs/*
 *.nc
 *.hdf
 *.h5
+*.grib
+*.grib2
+*.vrt
+*.shp
+*.shx
+*.dbf
+*.cpg
 
 # Temporary files
 *.tmp

@@ -32,6 +32,7 @@ jobs:
         run: node .clanker/finish-version.mjs
 
       - name: Record version in indicator repo
+        if: steps.version.outputs.already_recorded != 'true'
         env:
           VERSION: ${{ steps.version.outputs.completed_version }}
         run: |

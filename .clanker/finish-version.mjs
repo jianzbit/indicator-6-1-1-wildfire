@@ -49,7 +49,7 @@ function detectCoverage() {
 
 function countLines() {
   const extensions = new Set([".c",".cc",".cpp",".css",".go",".h",".hpp",".html",".java",".js",".jsx",".kt",".m",".mjs",".php",".py",".r",".rb",".rs",".scala",".sh",".sql",".swift",".ts",".tsx",".vue"]);
-  const excluded = /(^|\/)(dist|build|coverage|node_modules|vendor|\.venv|venv)(\/|$)|\.(min\.js|lock)$/i;
+  const excluded = /(^|\/)(\.clanker|dist|build|coverage|node_modules|vendor|\.venv|venv)(\/|$)|\.(min\.js|lock)$/i;
   return execFileSync("git", ["ls-files", "-z"])
     .toString().split("\0").filter(Boolean)
     .filter((file) => extensions.has(extname(file).toLowerCase()) && !excluded.test(file))

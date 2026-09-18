@@ -6,7 +6,15 @@ const statePath = ".clanker/state.json";
 const state = JSON.parse(readFileSync(statePath, "utf8"));
 const completedVersion = state.currentVersion;
 const pr = Number(process.env.PR_NUMBER || 0);
-if (state.completedVersions.some((entry) => entry.pr === pr && pr !== 0)) {
+const existing = state.completedVersions.find((entry) => entry.pr === pr && pr !== 0);
+if (existing) {
+  if (process.env.GITHUB_OUTPUT) {
+    writeFileSync(
+      process.env.GITHUB_OUTPUT,
+      `completed_version=${existing.version}\nnext_version=${state.currentVersion}\nalready_recorded=true\n`,
+      { flag: "a" },
+    );
+  }
   console.log(`PR ${pr} was already recorded.`);
   process.exit(0);
 }
@@ -25,7 +33,11 @@ state.lastMergedAt = event.mergedAt;
 writeFileSync(statePath, `${JSON.stringify(state, null, 2)}\n`);
 
 if (process.env.GITHUB_OUTPUT) {
-  writeFileSync(process.env.GITHUB_OUTPUT, `completed_version=${completedVersion}\nnext_version=${state.currentVersion}\n`, { flag: "a" });
+  writeFileSync(
+    process.env.GITHUB_OUTPUT,
+    `completed_version=${completedVersion}\nnext_version=${state.currentVersion}\nalready_recorded=false\n`,
+    { flag: "a" },
+  );
 }
 console.log(`Completed v${completedVersion}; next lap is v${state.currentVersion}.`);
 

@@ -10,6 +10,7 @@ import numpy as np
 import pandas as pd
 import pyproj
 import rasterio
+from rasterio.enums import MaskFlags
 from pyproj import CRS, Transformer
 
 BURNED_VALUE_THRESHOLD = 0
@@ -118,30 +119,46 @@ def sample_gabam_values_from_sources(
     sample_y[valid_indices] = latitude[valid_indices]
 
     for source in tile_sources:
-        bounds = source.bounds
-        inside = (
-            valid_input
-            & (sample_x >= bounds.left)
-            & (sample_x < bounds.right)
-            & (sample_y >= bounds.bottom)
-            & (sample_y < bounds.top)
-        )
+        if source.crs is None:
+            raise ValueError("GABAM raster must declare a CRS.")
+        # Transform each raster independently, then use actual pixel indices.
+        # Bounding-box tests mishandle north/south edges and rotated grids.
+        x, y = Transformer.from_crs(OBAT_COORDINATE_CRS, source.crs, always_xy=True).transform(
+            longitude[valid_indices], latitude[valid_indices])
+        finite = np.isfinite(x) & np.isfinite(y)
+        indices = valid_indices[finite]
+        sample_x[indices], sample_y[indices] = np.asarray(x)[finite], np.asarray(y)[finite]
+        rows, cols = rasterio.transform.rowcol(source.transform, sample_x[indices], sample_y[indices])
+        in_grid = (np.asarray(rows) >= 0) & (np.asarray(rows) < source.height) & (np.asarray(cols) >= 0) & (np.asarray(cols) < source.width)
+        inside = np.zeros(point_count, dtype=bool)
+        inside[indices[in_grid]] = True
         tile_covered |= inside
 
-        candidate_indices = np.flatnonzero(inside & ~valid_pixel)
+        # Inspect overlaps too: contradictory known observations must not depend
+        # on the caller's tile order.
+        candidate_indices = np.flatnonzero(inside)
         if candidate_indices.size == 0:
             continue
 
         coordinates = zip(sample_x[candidate_indices], sample_y[candidate_indices])
-        # Sample raw values without masking 0:
-        sampled = list(source.sample(coordinates, indexes=1, masked=False))
-        numeric_values = np.asarray(sampled, dtype=np.float32).reshape(-1)
+        # Ignore nodata=0 only for the declared binary-background convention.
+        # An explicit internal/sidecar/alpha mask carries additional information
+        # and must remain unknown even when its stored pixel happens to be 0/1.
+        flags = source.mask_flag_enums[0]
+        explicit_mask = MaskFlags.per_dataset in flags or MaskFlags.alpha in flags
+        sampled = list(source.sample(coordinates, indexes=1, masked=explicit_mask))
+        numeric_values = np.ma.concatenate(sampled).astype(np.float32).filled(np.nan)
 
         # In GABAM, both 0 (unburned) and 1 (burned) are valid observations.
         sample_valid = np.isfinite(numeric_values) & np.isin(numeric_values, [0.0, 1.0])
 
         if additional_nodata_values:
             sample_valid &= ~np.isin(numeric_values, list(additional_nodata_values))
+
+        previous = values[candidate_indices]
+        conflicting = sample_valid & np.isfinite(previous) & (previous != numeric_values)
+        if conflicting.any():
+            raise ValueError("Conflicting valid overlapping GABAM raster samples")
 
         target_indices = candidate_indices[sample_valid]
         values[target_indices] = numeric_values[sample_valid]

@@ -1,0 +1,98 @@
+{
+  "indicator_id": "6.1.1",
+  "country": "LUX",
+  "analysis_year": 2024,
+  "passed": true,
+  "validation_scope": "selected original-archive computational replay; not independent fire accuracy or a global error sample",
+  "code_commit": "c0e0128996acc8919aee7c0fa503849c0860d771",
+  "input_sha256": {
+    "GHS_OBAT_CSV_LUX_E2020_R2024A_V1_0.zip": "1034976556805f37961794794fd388769315754f7ff03b565a8a0c0f95a72edd",
+    "N50E005.tif": "ba5402ac25948b185c64efc3e65df1f44078ccef3705ba2c8147e2f7ffc83091",
+    "N55E005.tif": "ce82106ca8122352147abb261e879a95e0f941f01fb9f9d3fdc1ff9b4ce36f66"
+  },
+  "archive_members": [
+    {
+      "name": "GHS-OBAT_R2024_online_v2.pdf",
+      "bytes": 1820332,
+      "crc32": 3179364583
+    },
+    {
+      "name": "GHS_OBAT_CSV_LUX_E2020_R2024A_V1_0.csv",
+      "bytes": 21193022,
+      "crc32": 3054317872
+    }
+  ],
+  "unique_ids": 226721,
+  "rasters": [
+    {
+      "file": "N50E005.tif",
+      "crs": "EPSG:4326",
+      "transform": [
+        0.00025,
+        0.0,
+        5.0,
+        0.0,
+        -0.00025,
+        50.0
+      ],
+      "nodata": 0.0,
+      "mask_flags": [
+        "8"
+      ],
+      "point_count": 214466
+    },
+    {
+      "file": "N55E005.tif",
+      "crs": "EPSG:4326",
+      "transform": [
+        0.00025,
+        0.0,
+        5.0,
+        0.0,
+        -0.00025,
+        55.0
+      ],
+      "nodata": 0.0,
+      "mask_flags": [
+        "8"
+      ],
+      "point_count": 12544
+    }
+  ],
+  "comparisons": {
+    "total_buildings": {
+      "production": 226721,
+      "independent": 226721,
+      "passed": true
+    },
+    "valid_coordinate_buildings": {
+      "production": 226721,
+      "independent": 226721,
+      "passed": true
+    },
+    "tile_covered_buildings": {
+      "production": 226721,
+      "independent": 226721,
+      "passed": true
+    },
+    "valid_gabam_pixel_buildings": {
+      "production": 226721,
+      "independent": 226721,
+      "passed": true
+    },
+    "exposed_buildings": {
+      "production": 0,
+      "independent": 0,
+      "passed": true
+    }
+  },
+  "source_lineage": {
+    "building_archive": "SHA256 matches independently acquired official JRC LUX archive in indicator6.1.5 release bc8f8ded588bee3aae2b633fd1da5701b3f35bdc",
+    "hazard_tiles": "Existing private S3 mirror; exact tile bytes pinned, parent Zenodo ZIP linkage not independently re-established"
+  },
+  "limitations": [
+    "One selected country with pre-inspected zero-burn pilot; does not validate positive fire detection or transfer.",
+    "Binary zero remains source-coded background, not independently verified observation availability.",
+    "Source ID uniqueness and full archive-member coverage do not establish complete physical national stock."
+  ]
+}

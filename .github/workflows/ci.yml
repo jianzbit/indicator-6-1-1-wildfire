@@ -22,3 +22,6 @@ jobs:
 
       - name: Run tests with coverage
         run: uv run pytest --cov=src/wildfire_exposure --cov-report=xml --cov-report=term
+
+      - name: Audit frozen release disposition
+        run: uv run python scripts/review_release.py --check

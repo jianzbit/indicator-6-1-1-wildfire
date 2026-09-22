@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "indicator_id": "6.1.1",
+  "iso3": "LUX",
+  "analysis_year": 2024,
+  "research_status": "conditional_source_record_diagnostic",
+  "source_identity": "Caller-supplied local files; linkage to the cited GABAM ZIP is unverified.",
+  "count_unit": "CSV records, not independently deduplicated buildings",
+  "country_archive_completeness": "unverified: one supplied CSV only",
+  "zero_semantics": "GABAM binary background; not independently verified observation availability",
+  "independent_accuracy_validation": "not established",
+  "inputs": [
+    {
+      "name": "GHS_OBAT_CSV_LUX_E2020_R2024A_V1_0.csv",
+      "bytes": 21193022,
+      "sha256": "e91f9a833dc1b8b2b82544b3f1767001188f1ef2faf467e9ec43bde25342135a"
+    },
+    {
+      "name": "N50E005.tif",
+      "bytes": 974562,
+      "sha256": "ba5402ac25948b185c64efc3e65df1f44078ccef3705ba2c8147e2f7ffc83091"
+    },
+    {
+      "name": "N55E005.tif",
+      "bytes": 1075652,
+      "sha256": "ce82106ca8122352147abb261e879a95e0f941f01fb9f9d3fdc1ff9b4ce36f66"
+    }
+  ],
+  "implementation": [
+    {
+      "name": "__init__.py",
+      "bytes": 92,
+      "sha256": "b96a78a9f7d300e32b182eafdfe8915543e13b96b1c830eb53f98bb7c8814f62"
+    },
+    {
+      "name": "__main__.py",
+      "bytes": 100,
+      "sha256": "2380955e777bf8d43e6ee9b33a53bb9e7a92e82fc8ae854319e45cfd2ca2a2d2"
+    },
+    {
+      "name": "catalogue.py",
+      "bytes": 3300,
+      "sha256": "cd128fddea7a095455b84107570a2656ef902c776d844e3c4ca3dc827940eb5c"
+    },
+    {
+      "name": "cli.py",
+      "bytes": 2053,
+      "sha256": "ee1bc6a2dae9f52f457f2b144abeccd902fa0d88f5ca299d144a87b8a3ace48e"
+    },
+    {
+      "name": "exposure.py",
+      "bytes": 8312,
+      "sha256": "d5a1dfc1272bd9df0d16273ffc835c6e5ef02f4270d0b0454541c90b5680e527"
+    },
+    {
+      "name": "runner.py",
+      "bytes": 7239,
+      "sha256": "af5cfc35bf0887d288ec7b6fba5d7eea6770bed81e955fae86a3377b9125e2dc"
+    },
+    {
+      "name": "s3.py",
+      "bytes": 1930,
+      "sha256": "d05dfdaf47682338682a8cec700591da8bdcaf1c72499198b2c9e6a1668ae29b"
+    },
+    {
+      "name": "sensitivity.py",
+      "bytes": 2082,
+      "sha256": "e5e9bcb7f5819dd759263f649c44d2edbcc38c7c88460051aab43fcb8f9495c8"
+    }
+  ],
+  "runtime": {
+    "python": "3.12.13",
+    "pandas": "3.0.6",
+    "rasterio": "1.5.1"
+  },
+  "output": {
+    "name": "LUX_GABAM2024.csv",
+    "bytes": 763,
+    "sha256": "5ae286dd2d1b99e9300dbc68f35369962d71cf33355c3048d6c47c277d292a10"
+  },
+  "unclassified_records": 0,
+  "exposure_lower_percent": 0.0,
+  "exposure_upper_percent": 0.0,
+  "bounds_scope": "Within supplied record frame and binary coding assumptions; not confidence intervals or physical coverage bounds"
+}

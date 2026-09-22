@@ -1,0 +1,2012 @@
+{
+  "indicator_id": "6.1.1",
+  "research_level": "conditional_source_record_diagnostics",
+  "source_commit": "92b84728ad3095949607311640132d82505378db",
+  "source_repository": "jianzbit/indicator-6-1-1-wildfire",
+  "checksums": {
+    "review/source/legacy_GABAM2024.csv": "96d87a21af5301d8e971d679efd466f9c83a8556d492ee9cf102dcf93053c9cb",
+    "config/countries.csv": "a6154088b6ae81fd308cfafda4a8ea3090c17bb9d769876176a2dec82930afd6"
+  },
+  "legacy_rows": 228,
+  "legacy_authoritative_countries": 192,
+  "legacy_supplements": [
+    "ABW",
+    "AIA",
+    "ALA",
+    "ASM",
+    "ATF",
+    "BES",
+    "BLM",
+    "COK",
+    "CUW",
+    "CYM",
+    "ESH",
+    "FRO",
+    "GGY",
+    "GIB",
+    "GLP",
+    "GRL",
+    "GUF",
+    "JEY",
+    "MAF",
+    "MNP",
+    "MSR",
+    "MTQ",
+    "MYT",
+    "NCL",
+    "PCN",
+    "PRI",
+    "PYF",
+    "SJM",
+    "SXM",
+    "TCA",
+    "TKL",
+    "TWN",
+    "UMI",
+    "VGB",
+    "VIR",
+    "WLF"
+  ],
+  "legacy_valid_pixels_equal_exposed_rows": 228,
+  "corrected_published_country_results": 0,
+  "reproduced_selected_source_frame_pilots": 1,
+  "pilot_result_sha256": "3aa4aa7a8303105ed294faaf6d9f1335713bb2a9139a3718b7eb0aa6b0b2107c",
+  "global_accuracy_validation": "not established",
+  "conditions": [
+    "Regenerate original full country archives with corrected indexing and coding.",
+    "Verify binary-background observation semantics and actual archive provenance.",
+    "Audit record identity, physical inventory coverage and reference fire accuracy."
+  ],
+  "countries": [
+    {
+      "iso3": "AFG",
+      "country_name": "Afghanistan (Islamic Republic of)",
+      "category": "A",
+      "m49": "004",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "ALB",
+      "country_name": "Albania (Republic of)",
+      "category": "A",
+      "m49": "008",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "DZA",
+      "country_name": "Algeria (People's Democratic Republic of)",
+      "category": "A",
+      "m49": "012",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "AND",
+      "country_name": "Andorra (Principality of)",
+      "category": "A",
+      "m49": "020",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "AGO",
+      "country_name": "Angola (Republic of)",
+      "category": "A",
+      "m49": "024",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "ATG",
+      "country_name": "Antigua and Barbuda",
+      "category": "A",
+      "m49": "028",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "ARG",
+      "country_name": "Argentina (Argentine Republic)",
+      "category": "A",
+      "m49": "032",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "ARM",
+      "country_name": "Armenia (Republic of)",
+      "category": "A",
+      "m49": "051",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "AUS",
+      "country_name": "Australia (Commonwealth of)",
+      "category": "A",
+      "m49": "036",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "AUT",
+      "country_name": "Austria (Republic of)",
+      "category": "A",
+      "m49": "040",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "AZE",
+      "country_name": "Azerbaijan (Republic of)",
+      "category": "A",
+      "m49": "031",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "BHS",
+      "country_name": "Bahamas (Commonwealth of the)",
+      "category": "A",
+      "m49": "044",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "BHR",
+      "country_name": "Bahrain (Kingdom of)",
+      "category": "A",
+      "m49": "048",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "BGD",
+      "country_name": "Bangladesh (People's Republic of)",
+      "category": "A",
+      "m49": "050",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "BRB",
+      "country_name": "Barbados",
+      "category": "A",
+      "m49": "052",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "BLR",
+      "country_name": "Belarus (Republic of)",
+      "category": "A",
+      "m49": "112",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "BEL",
+      "country_name": "Belgium (Kingdom of)",
+      "category": "A",
+      "m49": "056",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "BLZ",
+      "country_name": "Belize",
+      "category": "A",
+      "m49": "084",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "BEN",
+      "country_name": "Benin (Republic of)",
+      "category": "A",
+      "m49": "204",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "BTN",
+      "country_name": "Bhutan (Kingdom of)",
+      "category": "A",
+      "m49": "064",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "BOL",
+      "country_name": "Bolivia (Plurinational State of)",
+      "category": "A",
+      "m49": "068",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "BIH",
+      "country_name": "Bosnia and Herzegovina",
+      "category": "A",
+      "m49": "070",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "BWA",
+      "country_name": "Botswana (Republic of)",
+      "category": "A",
+      "m49": "072",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "BRA",
+      "country_name": "Brazil (Federative Republic of)",
+      "category": "A",
+      "m49": "076",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "BRN",
+      "country_name": "Brunei Darussalam",
+      "category": "A",
+      "m49": "096",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "BGR",
+      "country_name": "Bulgaria (Republic of)",
+      "category": "A",
+      "m49": "100",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "BFA",
+      "country_name": "Burkina Faso",
+      "category": "A",
+      "m49": "854",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "BDI",
+      "country_name": "Burundi (Republic of)",
+      "category": "A",
+      "m49": "108",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "CPV",
+      "country_name": "Cabo Verde (Republic of)",
+      "category": "A",
+      "m49": "132",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "KHM",
+      "country_name": "Cambodia (Kingdom of)",
+      "category": "A",
+      "m49": "116",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "CMR",
+      "country_name": "Cameroon (Republic of)",
+      "category": "A",
+      "m49": "120",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "CAN",
+      "country_name": "Canada",
+      "category": "A",
+      "m49": "124",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "CAF",
+      "country_name": "Central African Republic",
+      "category": "A",
+      "m49": "140",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "TCD",
+      "country_name": "Chad (Republic of)",
+      "category": "A",
+      "m49": "148",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "CHL",
+      "country_name": "Chile (Republic of)",
+      "category": "A",
+      "m49": "152",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "CHN",
+      "country_name": "China (People's Republic of)",
+      "category": "A",
+      "m49": "156",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "COL",
+      "country_name": "Colombia (Republic of)",
+      "category": "A",
+      "m49": "170",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "COM",
+      "country_name": "Comoros (Union of the)",
+      "category": "A",
+      "m49": "174",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "COD",
+      "country_name": "Congo (Democratic Republic of the)",
+      "category": "A",
+      "m49": "180",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "COG",
+      "country_name": "Congo (Republic of the)",
+      "category": "A",
+      "m49": "178",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "CRI",
+      "country_name": "Costa Rica (Republic of)",
+      "category": "A",
+      "m49": "188",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "CIV",
+      "country_name": "C\u00f4te d'Ivoire (Republic of)",
+      "category": "A",
+      "m49": "384",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "HRV",
+      "country_name": "Croatia (Republic of)",
+      "category": "A",
+      "m49": "191",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "CUB",
+      "country_name": "Cuba (Republic of)",
+      "category": "A",
+      "m49": "192",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "CYP",
+      "country_name": "Cyprus (Republic of)",
+      "category": "A",
+      "m49": "196",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "CZE",
+      "country_name": "Czechia (Czech Republic)",
+      "category": "A",
+      "m49": "203",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "DNK",
+      "country_name": "Denmark (Kingdom of)",
+      "category": "A",
+      "m49": "208",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "DJI",
+      "country_name": "Djibouti (Republic of)",
+      "category": "A",
+      "m49": "262",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "DMA",
+      "country_name": "Dominica (Commonwealth of)",
+      "category": "A",
+      "m49": "212",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "DOM",
+      "country_name": "Dominican Republic",
+      "category": "A",
+      "m49": "214",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "ECU",
+      "country_name": "Ecuador (Republic of)",
+      "category": "A",
+      "m49": "218",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "EGY",
+      "country_name": "Egypt (Arab Republic of)",
+      "category": "A",
+      "m49": "818",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "SLV",
+      "country_name": "El Salvador (Republic of)",
+      "category": "A",
+      "m49": "222",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "GNQ",
+      "country_name": "Equatorial Guinea (Republic of)",
+      "category": "A",
+      "m49": "226",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "ERI",
+      "country_name": "Eritrea (State of)",
+      "category": "A",
+      "m49": "232",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "EST",
+      "country_name": "Estonia (Republic of)",
+      "category": "A",
+      "m49": "233",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "SWZ",
+      "country_name": "Eswatini (Kingdom of)",
+      "category": "A",
+      "m49": "748",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "ETH",
+      "country_name": "Ethiopia (Federal Democratic Republic of)",
+      "category": "A",
+      "m49": "231",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "FJI",
+      "country_name": "Fiji (Republic of)",
+      "category": "A",
+      "m49": "242",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "FIN",
+      "country_name": "Finland (Republic of)",
+      "category": "A",
+      "m49": "246",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "FRA",
+      "country_name": "France (French Republic)",
+      "category": "A",
+      "m49": "250",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "GAB",
+      "country_name": "Gabon (Gabonese Republic)",
+      "category": "A",
+      "m49": "266",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "GMB",
+      "country_name": "Gambia (Republic of the)",
+      "category": "A",
+      "m49": "270",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "GEO",
+      "country_name": "Georgia",
+      "category": "A",
+      "m49": "268",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "DEU",
+      "country_name": "Germany (Federal Republic of)",
+      "category": "A",
+      "m49": "276",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "GHA",
+      "country_name": "Ghana (Republic of)",
+      "category": "A",
+      "m49": "288",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "GRC",
+      "country_name": "Greece (Hellenic Republic)",
+      "category": "A",
+      "m49": "300",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "GRD",
+      "country_name": "Grenada",
+      "category": "A",
+      "m49": "308",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "GTM",
+      "country_name": "Guatemala (Republic of)",
+      "category": "A",
+      "m49": "320",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "GIN",
+      "country_name": "Guinea (Republic of)",
+      "category": "A",
+      "m49": "324",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "GNB",
+      "country_name": "Guinea-Bissau (Republic of)",
+      "category": "A",
+      "m49": "624",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "GUY",
+      "country_name": "Guyana (Co-operative Republic of)",
+      "category": "A",
+      "m49": "328",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "HTI",
+      "country_name": "Haiti (Republic of)",
+      "category": "A",
+      "m49": "332",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "HND",
+      "country_name": "Honduras (Republic of)",
+      "category": "A",
+      "m49": "340",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "HUN",
+      "country_name": "Hungary",
+      "category": "A",
+      "m49": "348",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "ISL",
+      "country_name": "Iceland",
+      "category": "A",
+      "m49": "352",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "IND",
+      "country_name": "India (Republic of)",
+      "category": "A",
+      "m49": "356",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "IDN",
+      "country_name": "Indonesia (Republic of)",
+      "category": "A",
+      "m49": "360",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "IRN",
+      "country_name": "Iran (Islamic Republic of)",
+      "category": "A",
+      "m49": "364",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "IRQ",
+      "country_name": "Iraq (Republic of)",
+      "category": "A",
+      "m49": "368",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "IRL",
+      "country_name": "Ireland",
+      "category": "A",
+      "m49": "372",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "ISR",
+      "country_name": "Israel (State of)",
+      "category": "A",
+      "m49": "376",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "ITA",
+      "country_name": "Italy (Italian Republic)",
+      "category": "A",
+      "m49": "380",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "JAM",
+      "country_name": "Jamaica",
+      "category": "A",
+      "m49": "388",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "JPN",
+      "country_name": "Japan",
+      "category": "A",
+      "m49": "392",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "JOR",
+      "country_name": "Jordan (Hashemite Kingdom of)",
+      "category": "A",
+      "m49": "400",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "KAZ",
+      "country_name": "Kazakhstan (Republic of)",
+      "category": "A",
+      "m49": "398",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "KEN",
+      "country_name": "Kenya (Republic of)",
+      "category": "A",
+      "m49": "404",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "KIR",
+      "country_name": "Kiribati (Republic of)",
+      "category": "A",
+      "m49": "296",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "PRK",
+      "country_name": "Korea (Democratic People's Republic of)",
+      "category": "A",
+      "m49": "408",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "KOR",
+      "country_name": "Korea (Republic of)",
+      "category": "A",
+      "m49": "410",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "KWT",
+      "country_name": "Kuwait (State of)",
+      "category": "A",
+      "m49": "414",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "KGZ",
+      "country_name": "Kyrgyzstan (Kyrgyz Republic)",
+      "category": "A",
+      "m49": "417",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "LAO",
+      "country_name": "Lao People's Democratic Republic",
+      "category": "A",
+      "m49": "418",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "LVA",
+      "country_name": "Latvia (Republic of)",
+      "category": "A",
+      "m49": "428",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "LBN",
+      "country_name": "Lebanon (Lebanese Republic)",
+      "category": "A",
+      "m49": "422",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "LSO",
+      "country_name": "Lesotho (Kingdom of)",
+      "category": "A",
+      "m49": "426",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "LBR",
+      "country_name": "Liberia (Republic of)",
+      "category": "A",
+      "m49": "430",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": false
+    },
+    {
+      "iso3": "LBY",
+      "country_name": "Libya (State of)",
+      "category": "A",
+      "m49": "434",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "LIE",
+      "country_name": "Liechtenstein (Principality of)",
+      "category": "A",
+      "m49": "438",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "LTU",
+      "country_name": "Lithuania (Republic of)",
+      "category": "A",
+      "m49": "440",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "LUX",
+      "country_name": "Luxembourg (Grand Duchy of)",
+      "category": "A",
+      "m49": "442",
+      "research_status": "selected_source_frame_pilot_only",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": 0.0,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "MDG",
+      "country_name": "Madagascar (Republic of)",
+      "category": "A",
+      "m49": "450",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "MWI",
+      "country_name": "Malawi (Republic of)",
+      "category": "A",
+      "m49": "454",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "MYS",
+      "country_name": "Malaysia",
+      "category": "A",
+      "m49": "458",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "MDV",
+      "country_name": "Maldives (Republic of)",
+      "category": "A",
+      "m49": "462",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "MLI",
+      "country_name": "Mali (Republic of)",
+      "category": "A",
+      "m49": "466",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "MLT",
+      "country_name": "Malta (Republic of)",
+      "category": "A",
+      "m49": "470",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "MHL",
+      "country_name": "Marshall Islands (Republic of the)",
+      "category": "A",
+      "m49": "584",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "MRT",
+      "country_name": "Mauritania (Islamic Republic of)",
+      "category": "A",
+      "m49": "478",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "MUS",
+      "country_name": "Mauritius (Republic of)",
+      "category": "A",
+      "m49": "480",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "MEX",
+      "country_name": "Mexico (United Mexican States)",
+      "category": "A",
+      "m49": "484",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "FSM",
+      "country_name": "Micronesia (Federated States of)",
+      "category": "A",
+      "m49": "583",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "MDA",
+      "country_name": "Moldova (Republic of)",
+      "category": "A",
+      "m49": "498",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "MCO",
+      "country_name": "Monaco (Principality of)",
+      "category": "A",
+      "m49": "492",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "MNG",
+      "country_name": "Mongolia",
+      "category": "A",
+      "m49": "496",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "MNE",
+      "country_name": "Montenegro",
+      "category": "A",
+      "m49": "499",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "MAR",
+      "country_name": "Morocco (Kingdom of)",
+      "category": "A",
+      "m49": "504",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "MOZ",
+      "country_name": "Mozambique (Republic of)",
+      "category": "A",
+      "m49": "508",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "MMR",
+      "country_name": "Myanmar (Republic of the Union of)",
+      "category": "A",
+      "m49": "104",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "NAM",
+      "country_name": "Namibia (Republic of)",
+      "category": "A",
+      "m49": "516",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "NRU",
+      "country_name": "Nauru (Republic of)",
+      "category": "A",
+      "m49": "520",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": false
+    },
+    {
+      "iso3": "NPL",
+      "country_name": "Nepal (Federal Democratic Republic of)",
+      "category": "A",
+      "m49": "524",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "NLD",
+      "country_name": "Netherlands (Kingdom of the)",
+      "category": "A",
+      "m49": "528",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "NZL",
+      "country_name": "New Zealand",
+      "category": "A",
+      "m49": "554",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "NIC",
+      "country_name": "Nicaragua (Republic of)",
+      "category": "A",
+      "m49": "558",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "NER",
+      "country_name": "Niger (Republic of the)",
+      "category": "A",
+      "m49": "562",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "NGA",
+      "country_name": "Nigeria (Federal Republic of)",
+      "category": "A",
+      "m49": "566",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "MKD",
+      "country_name": "North Macedonia (Republic of)",
+      "category": "A",
+      "m49": "807",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "NOR",
+      "country_name": "Norway (Kingdom of)",
+      "category": "A",
+      "m49": "578",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "OMN",
+      "country_name": "Oman (Sultanate of)",
+      "category": "A",
+      "m49": "512",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "PAK",
+      "country_name": "Pakistan (Islamic Republic of)",
+      "category": "A",
+      "m49": "586",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "PLW",
+      "country_name": "Palau (Republic of)",
+      "category": "A",
+      "m49": "585",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "PAN",
+      "country_name": "Panama (Republic of)",
+      "category": "A",
+      "m49": "591",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "PNG",
+      "country_name": "Papua New Guinea (Independent State of)",
+      "category": "A",
+      "m49": "598",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "PRY",
+      "country_name": "Paraguay (Republic of)",
+      "category": "A",
+      "m49": "600",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "PER",
+      "country_name": "Peru (Republic of)",
+      "category": "A",
+      "m49": "604",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "PHL",
+      "country_name": "Philippines (Republic of the)",
+      "category": "A",
+      "m49": "608",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "POL",
+      "country_name": "Poland (Republic of)",
+      "category": "A",
+      "m49": "616",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "PRT",
+      "country_name": "Portugal (Portuguese Republic)",
+      "category": "A",
+      "m49": "620",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "QAT",
+      "country_name": "Qatar (State of)",
+      "category": "A",
+      "m49": "634",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "ROU",
+      "country_name": "Romania",
+      "category": "A",
+      "m49": "642",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "RUS",
+      "country_name": "Russian Federation",
+      "category": "A",
+      "m49": "643",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "RWA",
+      "country_name": "Rwanda (Republic of)",
+      "category": "A",
+      "m49": "646",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "KNA",
+      "country_name": "Saint Kitts and Nevis (Federation of)",
+      "category": "A",
+      "m49": "659",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "LCA",
+      "country_name": "Saint Lucia",
+      "category": "A",
+      "m49": "662",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "VCT",
+      "country_name": "Saint Vincent and the Grenadines",
+      "category": "A",
+      "m49": "670",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "WSM",
+      "country_name": "Samoa (Independent State of)",
+      "category": "A",
+      "m49": "882",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "SMR",
+      "country_name": "San Marino (Republic of)",
+      "category": "A",
+      "m49": "674",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "STP",
+      "country_name": "Sao Tome and Principe (Democratic Republic of)",
+      "category": "A",
+      "m49": "678",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "SAU",
+      "country_name": "Saudi Arabia (Kingdom of)",
+      "category": "A",
+      "m49": "682",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "SEN",
+      "country_name": "Senegal (Republic of)",
+      "category": "A",
+      "m49": "686",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "SRB",
+      "country_name": "Serbia (Republic of)",
+      "category": "A",
+      "m49": "688",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "SYC",
+      "country_name": "Seychelles (Republic of)",
+      "category": "A",
+      "m49": "690",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "SLE",
+      "country_name": "Sierra Leone (Republic of)",
+      "category": "A",
+      "m49": "694",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "SGP",
+      "country_name": "Singapore (Republic of)",
+      "category": "A",
+      "m49": "702",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "SVK",
+      "country_name": "Slovakia (Slovak Republic)",
+      "category": "A",
+      "m49": "703",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "SVN",
+      "country_name": "Slovenia (Republic of)",
+      "category": "A",
+      "m49": "705",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "SLB",
+      "country_name": "Solomon Islands",
+      "category": "A",
+      "m49": "090",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "SOM",
+      "country_name": "Somalia (Federal Republic of)",
+      "category": "A",
+      "m49": "706",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "ZAF",
+      "country_name": "South Africa (Republic of)",
+      "category": "A",
+      "m49": "710",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "SSD",
+      "country_name": "South Sudan (Republic of)",
+      "category": "A",
+      "m49": "728",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "ESP",
+      "country_name": "Spain (Kingdom of)",
+      "category": "A",
+      "m49": "724",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "LKA",
+      "country_name": "Sri Lanka (Democratic Socialist Republic of)",
+      "category": "A",
+      "m49": "144",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": false
+    },
+    {
+      "iso3": "SDN",
+      "country_name": "Sudan (Republic of the)",
+      "category": "A",
+      "m49": "729",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "SUR",
+      "country_name": "Suriname (Republic of)",
+      "category": "A",
+      "m49": "740",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "SWE",
+      "country_name": "Sweden (Kingdom of)",
+      "category": "A",
+      "m49": "752",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "CHE",
+      "country_name": "Switzerland (Swiss Confederation)",
+      "category": "A",
+      "m49": "756",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "SYR",
+      "country_name": "Syrian Arab Republic",
+      "category": "A",
+      "m49": "760",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "TJK",
+      "country_name": "Tajikistan (Republic of)",
+      "category": "A",
+      "m49": "762",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "TZA",
+      "country_name": "Tanzania (United Republic of)",
+      "category": "A",
+      "m49": "834",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "THA",
+      "country_name": "Thailand (Kingdom of)",
+      "category": "A",
+      "m49": "764",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "TLS",
+      "country_name": "Timor-Leste (Democratic Republic of)",
+      "category": "A",
+      "m49": "626",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "TGO",
+      "country_name": "Togo (Togolese Republic)",
+      "category": "A",
+      "m49": "768",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "TON",
+      "country_name": "Tonga (Kingdom of)",
+      "category": "A",
+      "m49": "776",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "TTO",
+      "country_name": "Trinidad and Tobago (Republic of)",
+      "category": "A",
+      "m49": "780",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "TUN",
+      "country_name": "Tunisia (Republic of)",
+      "category": "A",
+      "m49": "788",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "TUR",
+      "country_name": "T\u00fcrkiye (Republic of)",
+      "category": "A",
+      "m49": "792",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "TKM",
+      "country_name": "Turkmenistan",
+      "category": "A",
+      "m49": "795",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "TUV",
+      "country_name": "Tuvalu",
+      "category": "A",
+      "m49": "798",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "UGA",
+      "country_name": "Uganda (Republic of)",
+      "category": "A",
+      "m49": "800",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "UKR",
+      "country_name": "Ukraine",
+      "category": "A",
+      "m49": "804",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "ARE",
+      "country_name": "United Arab Emirates",
+      "category": "A",
+      "m49": "784",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "GBR",
+      "country_name": "United Kingdom of Great Britain and Northern Ireland",
+      "category": "A",
+      "m49": "826",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "USA",
+      "country_name": "United States of America",
+      "category": "A",
+      "m49": "840",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "URY",
+      "country_name": "Uruguay (Oriental Republic of)",
+      "category": "A",
+      "m49": "858",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "UZB",
+      "country_name": "Uzbekistan (Republic of)",
+      "category": "A",
+      "m49": "860",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "VUT",
+      "country_name": "Vanuatu (Republic of)",
+      "category": "A",
+      "m49": "548",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "VEN",
+      "country_name": "Venezuela (Bolivarian Republic of)",
+      "category": "A",
+      "m49": "862",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "VNM",
+      "country_name": "Viet Nam (Socialist Republic of)",
+      "category": "A",
+      "m49": "704",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "YEM",
+      "country_name": "Yemen (Republic of)",
+      "category": "A",
+      "m49": "887",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "ZMB",
+      "country_name": "Zambia (Republic of)",
+      "category": "A",
+      "m49": "894",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "ZWE",
+      "country_name": "Zimbabwe (Republic of)",
+      "category": "A",
+      "m49": "716",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "VAT",
+      "country_name": "Holy See (State of the Vatican City)",
+      "category": "B",
+      "m49": "336",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    },
+    {
+      "iso3": "PSE",
+      "country_name": "State of Palestine",
+      "category": "B",
+      "m49": "275",
+      "research_status": "awaiting_corrected_full_archive_rerun",
+      "primary_exposure_percent": null,
+      "selected_pilot_source_coded_exposure_percent": null,
+      "legacy_row_present": true
+    }
+  ]
+}

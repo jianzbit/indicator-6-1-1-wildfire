@@ -4,6 +4,9 @@ from __future__ import annotations
 
 import argparse
 import json
+import hashlib
+import platform
+from contextlib import ExitStack
 from pathlib import Path
 
 import pandas as pd
@@ -33,6 +36,8 @@ def run_country_pipeline(
 ) -> pd.DataFrame:
     """Run exposure analysis for one country using local data files and optionally push to S3."""
     iso3 = iso3.strip().upper()
+    if year != 2024:
+        raise ValueError("This source contract supports GABAM 2024 only; supply a reviewed contract for another year.")
     obat_csv_path = Path(obat_csv_path)
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -60,8 +65,8 @@ def run_country_pipeline(
     valid_df = df_buildings.loc[valid_mask]
 
     # Open raster sources
-    sources = [rasterio.open(p) for p in tile_paths]
-    try:
+    with ExitStack() as stack:
+        sources = [stack.enter_context(rasterio.open(p)) for p in tile_paths]
         sampled_values, tile_covered, valid_pixel = sample_gabam_values_from_sources(
             sources,
             valid_df["lon"].to_numpy(),
@@ -81,18 +86,16 @@ def run_country_pipeline(
                 valid_df["lat"].to_numpy(),
                 buffer_meters=(0.0, 15.0, 30.0),
             )
-    finally:
-        for s in sources:
-            s.close()
 
     result_row = {
         "iso3": iso3,
         "analysis_year": year,
-        "gabam_version": "v3",
-        "gabam_record_id": 17707433,
-        "gabam_archive_md5": "b6c4b70bc95f9c3c30f4dfd5505ef12d",
-        "ghs_obat_release": "R2024A",
-        "ghs_obat_epoch": "E2020",
+        "gabam_version": "",
+        "gabam_record_id": "",
+        # Local tiles do not establish the identity of the parent ZIP.
+        "gabam_archive_md5": "",
+        "ghs_obat_release": "",
+        "ghs_obat_epoch": "",
         "burned_value_threshold": 0,
         "total_buildings": total_buildings,
         "valid_coordinate_buildings": valid_coords,
@@ -121,6 +124,33 @@ def run_country_pipeline(
     csv_out = out_dir / f"{iso3}_GABAM{year}.csv"
     df_result.to_csv(csv_out, index=False)
 
+    def fingerprint(path):
+        digest = hashlib.sha256()
+        with Path(path).open("rb") as stream:
+            for block in iter(lambda: stream.read(8 * 1024 * 1024), b""):
+                digest.update(block)
+        return {"name": Path(path).name, "bytes": Path(path).stat().st_size, "sha256": digest.hexdigest()}
+
+    unknown = total_buildings - valid_pixel_count
+    manifest = {
+        "schema_version": 1, "indicator_id": "6.1.1", "iso3": iso3, "analysis_year": year,
+        "research_status": "conditional_source_record_diagnostic",
+        "source_identity": "Caller-supplied local files; linkage to the cited GABAM ZIP is unverified.",
+        "count_unit": "CSV records, not independently deduplicated buildings",
+        "country_archive_completeness": "unverified: one supplied CSV only",
+        "zero_semantics": "GABAM binary background; not independently verified observation availability",
+        "independent_accuracy_validation": "not established",
+        "inputs": [fingerprint(obat_csv_path)] + [fingerprint(p) for p in tile_paths],
+        "implementation": [fingerprint(p) for p in sorted(Path(__file__).parent.glob("*.py"))],
+        "runtime": {"python": platform.python_version(), "pandas": pd.__version__, "rasterio": rasterio.__version__},
+        "output": fingerprint(csv_out), "unclassified_records": unknown,
+        "exposure_lower_percent": calculate_percentage(exposed_count, total_buildings) if total_buildings else None,
+        "exposure_upper_percent": calculate_percentage(exposed_count + unknown, total_buildings) if total_buildings else None,
+        "bounds_scope": "Within supplied record frame and binary coding assumptions; not confidence intervals or physical coverage bounds",
+    }
+    manifest_out = out_dir / f"{iso3}_GABAM{year}_manifest.json"
+    manifest_out.write_text(json.dumps(manifest, indent=2, allow_nan=False) + "\n", encoding="utf-8")
+
     if sensitivity_report:
         sens_out = out_dir / f"{iso3}_GABAM{year}_sensitivity.json"
         sens_out.write_text(json.dumps(sensitivity_report, indent=2), encoding="utf-8")
@@ -129,6 +159,7 @@ def run_country_pipeline(
             upload_file_to_s3(sens_out, s3_sens_key, bucket=s3_bucket)
 
     if upload_s3:
+        upload_file_to_s3(manifest_out, f"results/country_results/{manifest_out.name}", bucket=s3_bucket)
         s3_key = f"results/country_results/{iso3}_GABAM{year}.csv"
         upload_file_to_s3(csv_out, s3_key, bucket=s3_bucket)
 

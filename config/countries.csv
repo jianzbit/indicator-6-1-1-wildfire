@@ -1,0 +1,196 @@
+iso3,country_name,category,m49
+AFG,Afghanistan (Islamic Republic of),A,004
+ALB,Albania (Republic of),A,008
+DZA,Algeria (People's Democratic Republic of),A,012
+AND,Andorra (Principality of),A,020
+AGO,Angola (Republic of),A,024
+ATG,Antigua and Barbuda,A,028
+ARG,Argentina (Argentine Republic),A,032
+ARM,Armenia (Republic of),A,051
+AUS,Australia (Commonwealth of),A,036
+AUT,Austria (Republic of),A,040
+AZE,Azerbaijan (Republic of),A,031
+BHS,Bahamas (Commonwealth of the),A,044
+BHR,Bahrain (Kingdom of),A,048
+BGD,Bangladesh (People's Republic of),A,050
+BRB,Barbados,A,052
+BLR,Belarus (Republic of),A,112
+BEL,Belgium (Kingdom of),A,056
+BLZ,Belize,A,084
+BEN,Benin (Republic of),A,204
+BTN,Bhutan (Kingdom of),A,064
+BOL,Bolivia (Plurinational State of),A,068
+BIH,Bosnia and Herzegovina,A,070
+BWA,Botswana (Republic of),A,072
+BRA,Brazil (Federative Republic of),A,076
+BRN,Brunei Darussalam,A,096
+BGR,Bulgaria (Republic of),A,100
+BFA,Burkina Faso,A,854
+BDI,Burundi (Republic of),A,108
+CPV,Cabo Verde (Republic of),A,132
+KHM,Cambodia (Kingdom of),A,116
+CMR,Cameroon (Republic of),A,120
+CAN,Canada,A,124
+CAF,Central African Republic,A,140
+TCD,Chad (Republic of),A,148
+CHL,Chile (Republic of),A,152
+CHN,China (People's Republic of),A,156
+COL,Colombia (Republic of),A,170
+COM,Comoros (Union of the),A,174
+COD,Congo (Democratic Republic of the),A,180
+COG,Congo (Republic of the),A,178
+CRI,Costa Rica (Republic of),A,188
+CIV,Côte d'Ivoire (Republic of),A,384
+HRV,Croatia (Republic of),A,191
+CUB,Cuba (Republic of),A,192
+CYP,Cyprus (Republic of),A,196
+CZE,Czechia (Czech Republic),A,203
+DNK,Denmark (Kingdom of),A,208
+DJI,Djibouti (Republic of),A,262
+DMA,Dominica (Commonwealth of),A,212
+DOM,Dominican Republic,A,214
+ECU,Ecuador (Republic of),A,218
+EGY,Egypt (Arab Republic of),A,818
+SLV,El Salvador (Republic of),A,222
+GNQ,Equatorial Guinea (Republic of),A,226
+ERI,Eritrea (State of),A,232
+EST,Estonia (Republic of),A,233
+SWZ,Eswatini (Kingdom of),A,748
+ETH,Ethiopia (Federal Democratic Republic of),A,231
+FJI,Fiji (Republic of),A,242
+FIN,Finland (Republic of),A,246
+FRA,France (French Republic),A,250
+GAB,Gabon (Gabonese Republic),A,266
+GMB,Gambia (Republic of the),A,270
+GEO,Georgia,A,268
+DEU,Germany (Federal Republic of),A,276
+GHA,Ghana (Republic of),A,288
+GRC,Greece (Hellenic Republic),A,300
+GRD,Grenada,A,308
+GTM,Guatemala (Republic of),A,320
+GIN,Guinea (Republic of),A,324
+GNB,Guinea-Bissau (Republic of),A,624
+GUY,Guyana (Co-operative Republic of),A,328
+HTI,Haiti (Republic of),A,332
+HND,Honduras (Republic of),A,340
+HUN,Hungary,A,348
+ISL,Iceland,A,352
+IND,India (Republic of),A,356
+IDN,Indonesia (Republic of),A,360
+IRN,Iran (Islamic Republic of),A,364
+IRQ,Iraq (Republic of),A,368
+IRL,Ireland,A,372
+ISR,Israel (State of),A,376
+ITA,Italy (Italian Republic),A,380
+JAM,Jamaica,A,388
+JPN,Japan,A,392
+JOR,Jordan (Hashemite Kingdom of),A,400
+KAZ,Kazakhstan (Republic of),A,398
+KEN,Kenya (Republic of),A,404
+KIR,Kiribati (Republic of),A,296
+PRK,Korea (Democratic People's Republic of),A,408
+KOR,Korea (Republic of),A,410
+KWT,Kuwait (State of),A,414
+KGZ,Kyrgyzstan (Kyrgyz Republic),A,417
+LAO,Lao People's Democratic Republic,A,418
+LVA,Latvia (Republic of),A,428
+LBN,Lebanon (Lebanese Republic),A,422
+LSO,Lesotho (Kingdom of),A,426
+LBR,Liberia (Republic of),A,430
+LBY,Libya (State of),A,434
+LIE,Liechtenstein (Principality of),A,438
+LTU,Lithuania (Republic of),A,440
+LUX,Luxembourg (Grand Duchy of),A,442
+MDG,Madagascar (Republic of),A,450
+MWI,Malawi (Republic of),A,454
+MYS,Malaysia,A,458
+MDV,Maldives (Republic of),A,462
+MLI,Mali (Republic of),A,466
+MLT,Malta (Republic of),A,470
+MHL,Marshall Islands (Republic of the),A,584
+MRT,Mauritania (Islamic Republic of),A,478
+MUS,Mauritius (Republic of),A,480
+MEX,Mexico (United Mexican States),A,484
+FSM,Micronesia (Federated States of),A,583
+MDA,Moldova (Republic of),A,498
+MCO,Monaco (Principality of),A,492
+MNG,Mongolia,A,496
+MNE,Montenegro,A,499
+MAR,Morocco (Kingdom of),A,504
+MOZ,Mozambique (Republic of),A,508
+MMR,Myanmar (Republic of the Union of),A,104
+NAM,Namibia (Republic of),A,516
+NRU,Nauru (Republic of),A,520
+NPL,Nepal (Federal Democratic Republic of),A,524
+NLD,Netherlands (Kingdom of the),A,528
+NZL,New Zealand,A,554
+NIC,Nicaragua (Republic of),A,558
+NER,Niger (Republic of the),A,562
+NGA,Nigeria (Federal Republic of),A,566
+MKD,North Macedonia (Republic of),A,807
+NOR,Norway (Kingdom of),A,578
+OMN,Oman (Sultanate of),A,512
+PAK,Pakistan (Islamic Republic of),A,586
+PLW,Palau (Republic of),A,585
+PAN,Panama (Republic of),A,591
+PNG,Papua New Guinea (Independent State of),A,598
+PRY,Paraguay (Republic of),A,600
+PER,Peru (Republic of),A,604
+PHL,Philippines (Republic of the),A,608
+POL,Poland (Republic of),A,616
+PRT,Portugal (Portuguese Republic),A,620
+QAT,Qatar (State of),A,634
+ROU,Romania,A,642
+RUS,Russian Federation,A,643
+RWA,Rwanda (Republic of),A,646
+KNA,Saint Kitts and Nevis (Federation of),A,659
+LCA,Saint Lucia,A,662
+VCT,Saint Vincent and the Grenadines,A,670
+WSM,Samoa (Independent State of),A,882
+SMR,San Marino (Republic of),A,674
+STP,Sao Tome and Principe (Democratic Republic of),A,678
+SAU,Saudi Arabia (Kingdom of),A,682
+SEN,Senegal (Republic of),A,686
+SRB,Serbia (Republic of),A,688
+SYC,Seychelles (Republic of),A,690
+SLE,Sierra Leone (Republic of),A,694
+SGP,Singapore (Republic of),A,702
+SVK,Slovakia (Slovak Republic),A,703
+SVN,Slovenia (Republic of),A,705
+SLB,Solomon Islands,A,090
+SOM,Somalia (Federal Republic of),A,706
+ZAF,South Africa (Republic of),A,710
+SSD,South Sudan (Republic of),A,728
+ESP,Spain (Kingdom of),A,724
+LKA,Sri Lanka (Democratic Socialist Republic of),A,144
+SDN,Sudan (Republic of the),A,729
+SUR,Suriname (Republic of),A,740
+SWE,Sweden (Kingdom of),A,752
+CHE,Switzerland (Swiss Confederation),A,756
+SYR,Syrian Arab Republic,A,760
+TJK,Tajikistan (Republic of),A,762
+TZA,Tanzania (United Republic of),A,834
+THA,Thailand (Kingdom of),A,764
+TLS,Timor-Leste (Democratic Republic of),A,626
+TGO,Togo (Togolese Republic),A,768
+TON,Tonga (Kingdom of),A,776
+TTO,Trinidad and Tobago (Republic of),A,780
+TUN,Tunisia (Republic of),A,788
+TUR,Türkiye (Republic of),A,792
+TKM,Turkmenistan,A,795
+TUV,Tuvalu,A,798
+UGA,Uganda (Republic of),A,800
+UKR,Ukraine,A,804
+ARE,United Arab Emirates,A,784
+GBR,United Kingdom of Great Britain and Northern Ireland,A,826
+USA,United States of America,A,840
+URY,Uruguay (Oriental Republic of),A,858
+UZB,Uzbekistan (Republic of),A,860
+VUT,Vanuatu (Republic of),A,548
+VEN,Venezuela (Bolivarian Republic of),A,862
+VNM,Viet Nam (Socialist Republic of),A,704
+YEM,Yemen (Republic of),A,887
+ZMB,Zambia (Republic of),A,894
+ZWE,Zimbabwe (Republic of),A,716
+VAT,Holy See (State of the Vatican City),B,336
+PSE,State of Palestine,B,275

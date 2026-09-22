@@ -1,35 +1,18 @@
-# Indicator 6.1.1: Buildings in areas impacted by wildfire
+# Indicator 6.1.1: buildings in burned-area pixels
 
-[![CI](https://github.com/Building-Insights-Together/indicator-6.1.1-wildfire-risk/actions/workflows/ci.yml/badge.svg)](https://github.com/Building-Insights-Together/indicator-6.1.1-wildfire-risk/actions)
+**Conditional source-record research.** The sampler supports supplied-record exploration; the full global release remains withheld. One original-archive Luxembourg pilot has now been reproduced with an independent calculation. The legacy published table contains the documented masking/coverage defects and is retained only for audit.
 
-## Purpose
-Estimate national and global building exposure to wildfire-impacted areas using annual burned-area observations (GABAM) and building centroid locations (GHS-OBAT).
+The [current indicator card](docs/INDICATOR_CARD.md) defines the actual scope. The [scientific review](docs/CONDITIONAL_RESEARCH.md) explains issues, fixes and conditions for national publication. `review/conditional_research.json` accounts for all 195 authoritative countries with null primary estimates pending rerun. The legacy 228 jurisdictions comprise 192 authoritative countries and 36 supplements; Liberia, Sri Lanka and Nauru are absent.
 
-## Architecture & Revision (v0.1 -> v0.2)
-This revision builds upon Jian's initial investigation and resolves critical quality and analytical findings:
-
-1. **Spatial Tile Catalog Boundary Fix**:
-   - GABAM 5° x 5° GeoTIFF tiles encode the **northern** edge of the tile in the latitude prefix of the filename (e.g. `N50E005.tif` spans Latitude `[45.0, 50.0]`, Longitude `[5.0, 10.0]`), rather than the southern edge.
-   - Fixed the bounding box calculation in `wildfire_exposure/catalogue.py`, resolving coverage drops where countries like Luxembourg previously reported ~94.6% coverage due to missing `N55E005.tif`. With the fix, valid coordinate tile coverage reaches 100.0%.
-
-2. **NoData & Masked Array Handling**:
-   - GABAM v3 rasters use byte values: `0` (unburned background / NoData in unburned areas) and `1` (burned area).
-   - In earlier versions, rasterio's masked sampling flagged `0` as masked/nodata, which caused `valid_gabam_pixel_buildings` to equal `exposed_buildings` for all 228 countries (100% burn rate among 'valid' pixels).
-   - The extraction pipeline now distinguishes unburned land from nodata/uncovered areas.
-
-3. **Cloud Storage (AWS S3)**:
-   - Configured dedicated private analyst S3 bucket: `bit-alpha-data-802892343761-a955a2d204b1-indicator-6-7491703904`.
-   - Raw data (GABAM rasters and GHS-OBAT CSV archives) and results (country results, global progress tables) are stored in and synced to S3.
-
-## Structure
-- `src/wildfire_exposure/`: Core Python package (catalogue parsing, sampling, exposure classification, S3 integration).
-- `notebooks/`: Original exploratory notebook `wildfire_building_exposure_v4.ipynb`.
-- `results/tables/`: Consolidated results and country-level exposure tables.
-- `tests/`: Automated unit and integration test suite with high line coverage (>95%).
-
-## Quickstart
+The implementation now transforms coordinates for each raster, samples actual pixel boundaries, records actual input hashes and unknown-record bounds, and reports geodesic five-point perturbations accurately. GABAM binary background does not independently establish observed unburned land. Counts describe supplied CSV records; multi-member archive completeness, unique building identity and real-world accuracy remain unverified.
 
 ```bash
-uv sync
-uv run pytest --cov=src/wildfire_exposure --cov-report=term-missing
+uv sync --locked
+uv run pytest
+uv run python scripts/review_release.py --check
+uv run python -m wildfire_exposure run --help
 ```
+
+The [GABAM v3 publisher](https://zenodo.org/records/17707433) supplies the source description. `provenance/country_ontology.json` freezes the Forge country roster. Earlier notebook and methodology files preserve the implementation history; use the current card and review for release interpretation. No software-coverage or Clanker score certifies scientific quality.
+
+The [Luxembourg replay receipt](review/luxembourg/independent_replay.json) matches all 226,721 distinct source IDs and finds zero intersections with burned-code pixels in the two pinned tiles. This selected, previously inspected case tests computation, not positive fire detection, physical stock completeness or global transfer. The GABAM tiles are fingerprinted from the existing mirror; parent-ZIP lineage remains unverified.

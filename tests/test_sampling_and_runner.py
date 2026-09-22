@@ -133,4 +133,4 @@ def test_runner_sensitivity_s3_upload(tmp_path):
             run_sensitivity=True,
         )
         assert len(res) == 1
-        assert mock_upload.call_count == 2
+        assert mock_upload.call_count == 3

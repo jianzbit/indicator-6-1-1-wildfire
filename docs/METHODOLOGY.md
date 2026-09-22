@@ -1,5 +1,7 @@
 # Indicator 6.1.1 Methodology & Analysis Guide: Global Building Exposure to Wildfire-Impacted Areas
 
+> Current review (2026-09-21): **conditional implementation research only**. No corrected national release has been regenerated. Legacy global outputs are quarantined; see the [evidence and publication conditions](CONDITIONAL_RESEARCH.md). Earlier descriptions below are historical and do not establish current execution or validation.
+
 ## 1. Executive Summary & Purpose
 
 Indicator 6.1.1 measures the number and proportion of building stock exposed to wildfire-impacted areas worldwide. Wildfires cause severe economic disruption, loss of human life, and destruction of the built environment. As climate change accelerates wildfire frequency, intensity, and season length, tracking global building exposure provides a foundational empirical baseline for urban adaptation, spatial planning, building code enforcement, and disaster risk financing.

@@ -1,6 +1,6 @@
 {
   "indicatorId": "6.1.1",
-  "currentVersion": "0.3",
+  "currentVersion": "0.4",
   "completedVersions": [
     {
       "version": "0.1",
@@ -13,9 +13,15 @@
       "pr": 2,
       "sha": "92ded50ae2066e6ee07a7ded30d7553baf4a990a",
       "mergedAt": "2026-09-18T17:53:22Z"
+    },
+    {
+      "version": "0.3",
+      "pr": 3,
+      "sha": "07694d591eed902bd77228dba565316e34056901",
+      "mergedAt": "2026-09-22T13:49:30Z"
     }
   ],
   "coverage": 96.64,
-  "lines": 13972,
-  "lastMergedAt": "2026-09-18T17:53:22Z"
+  "lines": 14198,
+  "lastMergedAt": "2026-09-22T13:49:30Z"
 }

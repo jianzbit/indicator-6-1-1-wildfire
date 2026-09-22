@@ -1,5 +1,7 @@
 # Indicator 6.1.1: Buildings in areas impacted by wildfire
 
+> **Repository moved.** This personal repository is retained as a legacy source record. Active development and the authoritative conditional review are in [`Building-Insights-Together/indicator-6.1.1-wildfire-risk`](https://github.com/Building-Insights-Together/indicator-6.1.1-wildfire-risk). Do not open new work here.
+
 ## Purpose
 Estimate building exposure to wildfire-impacted areas using burned-area observations and building locations.
 

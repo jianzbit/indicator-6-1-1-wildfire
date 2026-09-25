@@ -1,5 +1,7 @@
 # Indicator 6.1.1: buildings in burned-area pixels
 
+The [dataset card](docs/DATASET_CARD.md) documents input versions, schemas, retained artifact hashes, access requirements and unresolved source/validation limits.
+
 **Conditional source-record research.** The sampler supports supplied-record exploration; the full global release remains withheld. One original-archive Luxembourg pilot has now been reproduced with an independent calculation. The legacy published table contains the documented masking/coverage defects and is retained only for audit.
 
 The [current indicator card](docs/INDICATOR_CARD.md) defines the actual scope. The [scientific review](docs/CONDITIONAL_RESEARCH.md) explains issues, fixes and conditions for national publication. `review/conditional_research.json` accounts for all 195 authoritative countries with null primary estimates pending rerun. The legacy 228 jurisdictions comprise 192 authoritative countries and 36 supplements; Liberia, Sri Lanka and Nauru are absent.
